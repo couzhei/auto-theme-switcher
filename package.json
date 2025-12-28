@@ -2,7 +2,7 @@
   "name": "auto-theme-switcher",
   "displayName": "Auto Theme Switcher",
   "description": "Automatically switches between themes based on time of day",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "couzhei",
   "repository": {
     "type": "git",
