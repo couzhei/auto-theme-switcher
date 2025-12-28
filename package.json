@@ -2,7 +2,7 @@
   "name": "auto-theme-switcher",
   "displayName": "Auto Theme Switcher",
   "description": "Automatically switches between themes based on time of day",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "couzhei",
   "repository": {
     "type": "git",
@@ -33,7 +33,46 @@
         "command": "auto-theme-switcher.switch",
         "title": "Auto Theme: Switch Now"
       }
-    ]
+    ],
+    "configuration": {
+      "title": "Auto Theme Switcher",
+      "properties": {
+        "autoThemeSwitcher.schedules": {
+          "type": "array",
+          "default": [
+            { "start": "06:00", "end": "12:00", "theme": "Default Light+" },
+            { "start": "12:00", "end": "18:00", "theme": "Solarized Light" },
+            { "start": "18:00", "end": "21:00", "theme": "One Dark Pro" },
+            { "start": "21:00", "end": "06:00", "theme": "Default Dark+" }
+          ],
+          "description": "Array of time-based theme schedules. Each entry needs 'start' (HH:MM), 'end' (HH:MM), and 'theme' (theme name).",
+          "items": {
+            "type": "object",
+            "properties": {
+              "start": {
+                "type": "string",
+                "description": "Start time in HH:MM format (24-hour)"
+              },
+              "end": {
+                "type": "string",
+                "description": "End time in HH:MM format (24-hour)"
+              },
+              "theme": {
+                "type": "string",
+                "description": "VS Code theme name to use during this period"
+              }
+            },
+            "required": ["start", "end", "theme"]
+          }
+        },
+        "autoThemeSwitcher.checkInterval": {
+          "type": "number",
+          "default": 60,
+          "minimum": 10,
+          "description": "How often to check the time (in seconds). Default: 60"
+        }
+      }
+    }
   },
   "scripts": {
     "vscode:prepublish": "pnpm run package",
