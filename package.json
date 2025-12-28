@@ -1,8 +1,8 @@
 {
-  "name": "auto-theme-changer",
-  "displayName": "Auto Theme Changer",
+  "name": "auto-theme-manager",
+  "displayName": "Theme Manager",
   "description": "Automatically switches between themes based on time of day",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "publisher": "couzhei",
   "repository": {
     "type": "git",
