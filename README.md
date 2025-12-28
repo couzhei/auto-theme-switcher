@@ -28,14 +28,15 @@ Add to your `settings.json`:
 
 ### Settings
 
-| Setting | Type | Default | Description |
-|---------|------|---------|-------------|
-| `autoThemeSwitcher.schedules` | array | (see above) | Array of time-based theme schedules |
-| `autoThemeSwitcher.checkInterval` | number | 60 | How often to check time (in seconds) |
+| Setting                           | Type   | Default     | Description                          |
+| --------------------------------- | ------ | ----------- | ------------------------------------ |
+| `autoThemeSwitcher.schedules`     | array  | (see above) | Array of time-based theme schedules  |
+| `autoThemeSwitcher.checkInterval` | number | 60          | How often to check time (in seconds) |
 
 ### Schedule Format
 
 Each schedule entry requires:
+
 - `start`: Start time in HH:MM format (24-hour)
 - `end`: End time in HH:MM format (24-hour)
 - `theme`: Exact VS Code theme name
@@ -45,6 +46,7 @@ Each schedule entry requires:
 The extension activates automatically when VS Code starts.
 
 To manually trigger a theme switch:
+
 1. Press `Ctrl+Shift+P` (or `Cmd+Shift+P` on Mac)
 2. Type "Auto Theme: Switch Now"
 3. Press Enter
@@ -52,6 +54,7 @@ To manually trigger a theme switch:
 ## Finding Theme Names
 
 To find the exact theme name:
+
 1. Press `Ctrl+Shift+P`
 2. Type "Preferences: Color Theme"
 3. The theme names shown are exactly what you should use
@@ -59,11 +62,13 @@ To find the exact theme name:
 ## Release Notes
 
 ### 0.0.3
+
 - Added user-configurable settings
 - Configurable check interval
 - Settings reload without restart
 
 ### 0.0.2
+
 - Initial public release
 
 ## License
