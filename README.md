@@ -74,23 +74,6 @@ To find the exact theme name for your configuration:
 - Changes to settings are applied immediately without requiring a restart
 - A notification is shown when the theme is switched
 
-## Release Notes
-
-### 0.0.6
-
-- Improved theme switching logic
-- Enhanced configuration handling
-
-### 0.0.3
-
-- Added user-configurable settings
-- Configurable check interval
-- Settings reload without restart
-
-### 0.0.2
-
-- Initial public release
-
 ## License
 
-MIT
+MIT (Whatever that is)

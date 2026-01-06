@@ -2,7 +2,7 @@
   "name": "auto-theme-manager",
   "displayName": "Theme Manager",
   "description": "Automatically switches between themes based on time of day",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "publisher": "couzhei",
   "repository": {
     "type": "git",
@@ -110,15 +110,15 @@
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/vscode": "^1.107.0",
     "@types/mocha": "^10.0.10",
-    "@types/node": "22.x",
-    "typescript-eslint": "^8.48.1",
-    "eslint": "^9.39.1",
-    "esbuild": "^0.27.1",
+    "@types/node": "~22.19.3",
+    "@types/vscode": "^1.107.0",
+    "@vscode/test-cli": "^0.0.12",
+    "@vscode/test-electron": "^2.5.2",
+    "esbuild": "^0.27.2",
+    "eslint": "^9.39.2",
     "npm-run-all": "^4.1.5",
     "typescript": "^5.9.3",
-    "@vscode/test-cli": "^0.0.12",
-    "@vscode/test-electron": "^2.5.2"
+    "typescript-eslint": "^8.52.0"
   }
 }

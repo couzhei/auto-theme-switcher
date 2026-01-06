@@ -1,9 +1,20 @@
 # Change Log
 
-All notable changes to the "auto-theme-switcher" extension will be documented in this file.
+## [0.0.7]
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+- Just improved packaging
 
-## [Unreleased]
+## [0.0.6]
 
-- Initial release
+- Improved theme switching logic
+- Enhanced configuration handling
+
+## [0.0.3]
+
+- Added user-configurable settings
+- Configurable check interval
+- Settings reload without restart
+
+## [0.0.2]
+
+- Initial public release
